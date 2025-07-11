@@ -10,33 +10,52 @@
       line-height: 1.6;
       margin: 0;
       padding: 2rem;
-      background-color: #f8f8f8;
+      background: linear-gradient(135deg, #f8f8f8 0%, #ececec 100%);
       color: #333;
     }
     h1 {
       text-align: center;
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1.2rem;
       margin-bottom: 2rem;
+      color: #7f8c8d;
     }
     section {
       background: white;
-      border-radius: 8px;
+      border-radius: 12px;
       padding: 1.5rem;
       margin-bottom: 2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    section:hover {
+      transform: scale(1.01);
     }
     h2 {
-      color: #d94f4f;
-      border-bottom: 2px solid #d94f4f;
+      color: #e74c3c;
+      border-bottom: 2px solid #e74c3c;
       padding-bottom: 0.5rem;
+      margin-top: 0;
     }
     ul {
       list-style-type: disc;
       padding-left: 1.5rem;
     }
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>重訓課表</h1>
+  <div class="subtitle">每次訓練，選四項動作來做</div>
 
   <section>
     <h2>胸部</h2>
