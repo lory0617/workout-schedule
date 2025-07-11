@@ -6,10 +6,12 @@
   <title>重訓課表</title>
   <style>
     :root {
-      --primary-color: #ff3e3e;
-      --secondary-color: #2d2dff;
-      --accent-color: #ffd700;
-      --background-light: #fff8f0;
+      --color1: #57A0D5;
+      --color2: #00BBE0;
+      --color3: #00D2D3;
+      --color4: #4CE6B3;
+      --color5: #A5F38D;
+      --color6: #F9F871;
       --text-dark: #1f1f1f;
     }
 
@@ -18,21 +20,21 @@
       line-height: 1.6;
       margin: 0;
       padding: 2rem;
-      background: linear-gradient(135deg, var(--background-light), #ffeaea);
+      background: linear-gradient(135deg, var(--color1), var(--color4));
       color: var(--text-dark);
     }
     h1 {
       text-align: center;
       margin-bottom: 0.5rem;
       font-size: 2.8rem;
-      color: var(--primary-color);
+      color: var(--color2);
       letter-spacing: 1px;
     }
     .subtitle {
       text-align: center;
       font-size: 1.3rem;
       margin-bottom: 2rem;
-      color: var(--secondary-color);
+      color: var(--color6);
       font-weight: bold;
     }
     section {
@@ -46,14 +48,14 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 1.5rem;
-      border-left: 8px solid var(--primary-color);
+      border-left: 8px solid var(--color3);
     }
     section:hover {
       transform: scale(1.01);
     }
     h2 {
-      color: var(--secondary-color);
-      border-bottom: 2px solid var(--accent-color);
+      color: var(--color2);
+      border-bottom: 2px solid var(--color6);
       padding-bottom: 0.5rem;
       margin-top: 0;
       width: 100%;
@@ -73,7 +75,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       flex-shrink: 0;
-      border: 3px solid var(--accent-color);
+      border: 3px solid var(--color5);
     }
     .content {
       flex: 1;
@@ -91,7 +93,7 @@
 
   <section>
     <h2>胸部</h2>
-    <img class="exercise-img" src="images/chest_1.png" alt="胸部訓練示意圖">
+    <img class="exercise-img" src="images/chest.png" alt="胸部訓練示意圖">
     <div class="content">
       <ul>
         <li>史密斯上胸 10kg（單邊）或 機械上胸 10kg（槓片單邊）</li>
@@ -105,7 +107,7 @@
 
   <section>
     <h2>背部</h2>
-    <img class="exercise-img" src="images/back_1.png" alt="背部訓練示意圖">
+    <img class="exercise-img" src="images/back.png" alt="背部訓練示意圖">
     <div class="content">
       <ul>
         <li>引體向上 補41kg</li>
@@ -119,7 +121,7 @@
 
   <section>
     <h2>肩部</h2>
-    <img class="exercise-img" src="images/shoulder_1.png" alt="肩部訓練示意圖">
+    <img class="exercise-img" src="images/shoulder.png" alt="肩部訓練示意圖">
     <div class="content">
       <ul>
         <li>機械寬握肩推 30kg</li>
@@ -133,7 +135,7 @@
 
   <section>
     <h2>腿部</h2>
-    <img class="exercise-img" src="images/leg_1.png" alt="腿部訓練示意圖">
+    <img class="exercise-img" src="images/leg.png" alt="腿部訓練示意圖">
     <div class="content">
       <ul>
         <li>哈克蹲 20kg 或 史密斯寬距深蹲 12.5kg（單邊）</li>
