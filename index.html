@@ -32,6 +32,10 @@
       margin-bottom: 2rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.2s;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
     }
     section:hover {
       transform: scale(1.01);
@@ -41,22 +45,26 @@
       border-bottom: 2px solid #e74c3c;
       padding-bottom: 0.5rem;
       margin-top: 0;
+      width: 100%;
     }
     ul {
       list-style-type: disc;
       padding-left: 1.5rem;
+      margin: 0;
     }
     .exercise-img {
-      display: block;
-      margin: 1rem auto;
-      max-width: 500px;
+      max-width: 300px;
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      flex-shrink: 0;
     }
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
+    .content {
+      flex: 1;
+    }
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
       }
     }
   </style>
@@ -67,50 +75,58 @@
 
   <section>
     <h2>胸部</h2>
-    <img class="exercise-img" src="images/chest.png" alt="胸部訓練示意圖">
-    <ul>
-      <li>史密斯上胸 10kg（單邊）或 機械上胸 10kg（槓片單邊）</li>
-      <li>槓拎臥推 10kg（單邊）或 機械臥推 15kg（槓片單邊）</li>
-      <li>機械雙槓下胸 15kg（槓片單邊）</li>
-      <li>機械夾胸 30kg 或 龍門架繩索夾胸 5kg（單邊）</li>
-      <li>纜繩前三角 10kg</li>
-    </ul>
+    <img class="exercise-img" src="images/chest_1.png" alt="胸部訓練示意圖">
+    <div class="content">
+      <ul>
+        <li>史密斯上胸 10kg（單邊）或 機械上胸 10kg（槓片單邊）</li>
+        <li>槓拎臥推 10kg（單邊）或 機械臥推 15kg（槓片單邊）</li>
+        <li>機械雙槓下胸 15kg（槓片單邊）</li>
+        <li>機械夾胸 30kg 或 龍門架繩索夾胸 5kg（單邊）</li>
+        <li>纜繩前三角 10kg</li>
+      </ul>
+    </div>
   </section>
 
   <section>
     <h2>背部</h2>
-    <img class="exercise-img" src="https://i.imgur.com/wMMeEy4.png" alt="背部訓練示意圖">
-    <ul>
-      <li>引體向上 補41kg</li>
-      <li>機械闊背下拉 20kg（槓片單邊）</li>
-      <li>機械握把划船 10kg（槓片單邊）或 地雷管寬握划船 15kg</li>
-      <li>直臂下拉 20kg</li>
-      <li>滑輪下拉 35kg</li>
-    </ul>
+    <img class="exercise-img" src="images/back_1.png" alt="背部訓練示意圖">
+    <div class="content">
+      <ul>
+        <li>引體向上 補41kg</li>
+        <li>機械闊背下拉 20kg（槓片單邊）</li>
+        <li>機械握把划船 10kg（槓片單邊）或 地雷管寬握划船 15kg</li>
+        <li>直臂下拉 20kg</li>
+        <li>滑輪下拉 35kg</li>
+      </ul>
+    </div>
   </section>
 
   <section>
     <h2>肩部</h2>
-    <img class="exercise-img" src="https://i.imgur.com/USrliBg.png" alt="肩部訓練示意圖">
-    <ul>
-      <li>機械寬握肩推 30kg</li>
-      <li>機械窄握肩推 30kg</li>
-      <li>啞鈴肩飛鳥 5kg（單邊）</li>
-      <li>啞鈴後三角 10kg 或 cable後三角 4.5kg（單邊）</li>
-      <li>纜繩三頭下壓 18kg</li>
-    </ul>
+    <img class="exercise-img" src="images/shoulder_1.png" alt="肩部訓練示意圖">
+    <div class="content">
+      <ul>
+        <li>機械寬握肩推 30kg</li>
+        <li>機械窄握肩推 30kg</li>
+        <li>啞鈴肩飛鳥 5kg（單邊）</li>
+        <li>啞鈴後三角 10kg 或 cable後三角 4.5kg（單邊）</li>
+        <li>纜繩三頭下壓 18kg</li>
+      </ul>
+    </div>
   </section>
 
   <section>
     <h2>腿部</h2>
-    <img class="exercise-img" src="https://i.imgur.com/vvobGkZ.png" alt="腿部訓練示意圖">
-    <ul>
-      <li>哈克蹲 20kg 或 史密斯寬距深蹲 12.5kg（單邊）</li>
-      <li>機械腿推 25kg（單邊）</li>
-      <li>機械前腿 2.5kg（單邊）</li>
-      <li>機械腿外展 40kg</li>
-      <li>機械腿後勾 2.5kg</li>
-    </ul>
+    <img class="exercise-img" src="images/leg_1.png" alt="腿部訓練示意圖">
+    <div class="content">
+      <ul>
+        <li>哈克蹲 20kg 或 史密斯寬距深蹲 12.5kg（單邊）</li>
+        <li>機械腿推 25kg（單邊）</li>
+        <li>機械前腿 2.5kg（單邊）</li>
+        <li>機械腿外展 40kg</li>
+        <li>機械腿後勾 2.5kg</li>
+      </ul>
+    </div>
   </section>
 
 </body>
